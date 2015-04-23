@@ -508,6 +508,13 @@ func CoerceToAttributeValue(i interface{}) (*AttributeValue, error) {
 		return a, nil
 	}
 
+	// number - float (the default unmarshal will always use this type)
+	in, in_ok := i.(int64)
+	if in_ok {
+		a.N = strconv.FormatFloat(float64(in), 'f', -1, 64)
+		return a, nil
+	}
+
 	// string (binary also coerced to string)
 	s, s_ok := i.(string)
 	if s_ok {
