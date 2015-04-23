@@ -4,8 +4,8 @@ package batch_get_item
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/smugmug/godynamo/types/attributevalue"
-	"github.com/smugmug/godynamo/types/item"
+	"github.com/gshiftlabs-gwedow/godynamo/types/attributevalue"
+	"github.com/gshiftlabs-gwedow/godynamo/types/item"
 	"testing"
 )
 

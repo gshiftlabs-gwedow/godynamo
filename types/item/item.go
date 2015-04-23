@@ -2,7 +2,7 @@
 package item
 
 import (
-	"github.com/smugmug/godynamo/types/attributevalue"
+	"github.com/gshiftlabs-gwedow/godynamo/types/attributevalue"
 )
 
 type Item attributevalue.AttributeValueMap

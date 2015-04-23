@@ -8,11 +8,11 @@ package update_table
 
 import (
 	"encoding/json"
-	"github.com/smugmug/godynamo/authreq"
-	"github.com/smugmug/godynamo/aws_const"
-	create_table "github.com/smugmug/godynamo/endpoints/create_table"
-	"github.com/smugmug/godynamo/types/globalsecondaryindex"
-	"github.com/smugmug/godynamo/types/provisionedthroughput"
+	"github.com/gshiftlabs-gwedow/godynamo/authreq"
+	"github.com/gshiftlabs-gwedow/godynamo/aws_const"
+	create_table "github.com/gshiftlabs-gwedow/godynamo/endpoints/create_table"
+	"github.com/gshiftlabs-gwedow/godynamo/types/globalsecondaryindex"
+	"github.com/gshiftlabs-gwedow/godynamo/types/provisionedthroughput"
 )
 
 const (

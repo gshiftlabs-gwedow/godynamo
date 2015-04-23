@@ -7,7 +7,7 @@ import (
 	"crypto/hmac"
 	"crypto/sha256"
 	"encoding/hex"
-	"github.com/smugmug/godynamo/aws_const"
+	"github.com/gshiftlabs-gwedow/godynamo/aws_const"
 	"hash"
 	"strings"
 	"time"

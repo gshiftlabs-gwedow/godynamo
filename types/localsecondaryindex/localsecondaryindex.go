@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/smugmug/godynamo/types/aws_strings"
-	"github.com/smugmug/godynamo/types/keydefinition"
+	"github.com/gshiftlabs-gwedow/godynamo/types/aws_strings"
+	"github.com/gshiftlabs-gwedow/godynamo/types/keydefinition"
 )
 
 type LocalSecondaryIndex struct {

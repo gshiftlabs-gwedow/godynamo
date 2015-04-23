@@ -9,14 +9,14 @@ package put_item
 import (
 	"encoding/json"
 	"errors"
-	"github.com/smugmug/godynamo/authreq"
-	"github.com/smugmug/godynamo/aws_const"
-	"github.com/smugmug/godynamo/types/attributesresponse"
-	"github.com/smugmug/godynamo/types/attributevalue"
-	"github.com/smugmug/godynamo/types/aws_strings"
-	"github.com/smugmug/godynamo/types/expected"
-	"github.com/smugmug/godynamo/types/expressionattributenames"
-	"github.com/smugmug/godynamo/types/item"
+	"github.com/gshiftlabs-gwedow/godynamo/authreq"
+	"github.com/gshiftlabs-gwedow/godynamo/aws_const"
+	"github.com/gshiftlabs-gwedow/godynamo/types/attributesresponse"
+	"github.com/gshiftlabs-gwedow/godynamo/types/attributevalue"
+	"github.com/gshiftlabs-gwedow/godynamo/types/aws_strings"
+	"github.com/gshiftlabs-gwedow/godynamo/types/expected"
+	"github.com/gshiftlabs-gwedow/godynamo/types/expressionattributenames"
+	"github.com/gshiftlabs-gwedow/godynamo/types/item"
 )
 
 const (

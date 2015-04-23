@@ -1,4 +1,4 @@
-Copyright (c) 2013,2014 SmugMug, Inc. All rights reserved.
+Copyright (c) 2013,2014 gshiftlabs-gwedow, Inc. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -10,10 +10,10 @@ met:
       disclaimer in the documentation and/or other materials provided
       with the distribution.
 
-THIS SOFTWARE IS PROVIDED BY SMUGMUG, INC. ``AS IS'' AND ANY
+THIS SOFTWARE IS PROVIDED BY gshiftlabs-gwedow, INC. ``AS IS'' AND ANY
 EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
-PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SMUGMUG, INC. BE LIABLE FOR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL gshiftlabs-gwedow, INC. BE LIABLE FOR
 ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
 DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
 GOODS OR SERVICES;LOSS OF USE, DATA, OR PROFITS; OR BUSINESS

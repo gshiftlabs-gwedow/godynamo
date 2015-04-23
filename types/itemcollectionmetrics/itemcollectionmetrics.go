@@ -3,7 +3,7 @@
 package itemcollectionmetrics
 
 import (
-	"github.com/smugmug/godynamo/types/attributevalue"
+	"github.com/gshiftlabs-gwedow/godynamo/types/attributevalue"
 )
 
 type ItemCollectionMetrics struct {

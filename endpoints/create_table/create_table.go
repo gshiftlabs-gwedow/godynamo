@@ -8,13 +8,13 @@ package create_table
 
 import (
 	"encoding/json"
-	"github.com/smugmug/godynamo/authreq"
-	"github.com/smugmug/godynamo/aws_const"
-	"github.com/smugmug/godynamo/types/attributedefinition"
-	"github.com/smugmug/godynamo/types/globalsecondaryindex"
-	"github.com/smugmug/godynamo/types/keydefinition"
-	"github.com/smugmug/godynamo/types/localsecondaryindex"
-	"github.com/smugmug/godynamo/types/provisionedthroughput"
+	"github.com/gshiftlabs-gwedow/godynamo/authreq"
+	"github.com/gshiftlabs-gwedow/godynamo/aws_const"
+	"github.com/gshiftlabs-gwedow/godynamo/types/attributedefinition"
+	"github.com/gshiftlabs-gwedow/godynamo/types/globalsecondaryindex"
+	"github.com/gshiftlabs-gwedow/godynamo/types/keydefinition"
+	"github.com/gshiftlabs-gwedow/godynamo/types/localsecondaryindex"
+	"github.com/gshiftlabs-gwedow/godynamo/types/provisionedthroughput"
 )
 
 const (

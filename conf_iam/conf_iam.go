@@ -15,8 +15,8 @@ package conf_iam
 import (
 	"errors"
 	"fmt"
-	roles_files "github.com/smugmug/goawsroles/roles_files"
-	conf "github.com/smugmug/godynamo/conf"
+	roles_files "github.com/gshiftlabs-gwedow/goawsroles/roles_files"
+	conf "github.com/gshiftlabs-gwedow/godynamo/conf"
 	"log"
 	"time"
 )

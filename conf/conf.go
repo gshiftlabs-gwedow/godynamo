@@ -44,7 +44,7 @@ type SDK_conf_file struct {
 				// Set to true to use IAM authentication.
 				Use_iam bool
 				// The role provider is described in the goawsroles package.
-				// See: https://github.com/smugmug/goawsroles/
+				// See: https://github.com/gshiftlabs-gwedow/goawsroles/
 				// Currently the only support is for the "file" provider, whereby
 				// roles data is written to local files.
 				Role_provider string

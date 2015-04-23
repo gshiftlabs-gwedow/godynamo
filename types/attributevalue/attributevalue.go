@@ -7,7 +7,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/smugmug/godynamo/types/cast"
+	"github.com/gshiftlabs-gwedow/godynamo/types/cast"
 	"strconv"
 )
 

@@ -8,9 +8,9 @@ package delete_table
 
 import (
 	"encoding/json"
-	"github.com/smugmug/godynamo/authreq"
-	"github.com/smugmug/godynamo/aws_const"
-	create_table "github.com/smugmug/godynamo/endpoints/create_table"
+	"github.com/gshiftlabs-gwedow/godynamo/authreq"
+	"github.com/gshiftlabs-gwedow/godynamo/aws_const"
+	create_table "github.com/gshiftlabs-gwedow/godynamo/endpoints/create_table"
 )
 
 const (

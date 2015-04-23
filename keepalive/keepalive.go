@@ -1,7 +1,7 @@
 package keepalive
 
 import (
-	auth_v4 "github.com/smugmug/godynamo/auth_v4" // to get the Client
+	auth_v4 "github.com/gshiftlabs-gwedow/godynamo/auth_v4" // to get the Client
 	"log"
 	"time"
 )

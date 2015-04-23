@@ -6,7 +6,7 @@ package expected
 import (
 	"encoding/json"
 	"errors"
-	"github.com/smugmug/godynamo/types/attributevalue"
+	"github.com/gshiftlabs-gwedow/godynamo/types/attributevalue"
 )
 
 type Expected map[string]*Constraints

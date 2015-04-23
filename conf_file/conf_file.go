@@ -3,9 +3,9 @@ package conf_file
 
 import (
 	"encoding/json"
-	"github.com/smugmug/goawsroles/roles_files"
-	"github.com/smugmug/godynamo/aws_const"
-	"github.com/smugmug/godynamo/conf"
+	"github.com/gshiftlabs-gwedow/goawsroles/roles_files"
+	"github.com/gshiftlabs-gwedow/godynamo/aws_const"
+	"github.com/gshiftlabs-gwedow/godynamo/conf"
 	"io/ioutil"
 	"log"
 	"net"

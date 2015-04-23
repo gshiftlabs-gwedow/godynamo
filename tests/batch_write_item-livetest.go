@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/smugmug/godynamo/conf"
-	"github.com/smugmug/godynamo/conf_file"
-	conf_iam "github.com/smugmug/godynamo/conf_iam"
-	batch_write_item "github.com/smugmug/godynamo/endpoints/batch_write_item"
-	keepalive "github.com/smugmug/godynamo/keepalive"
-	"github.com/smugmug/godynamo/types/attributevalue"
-	"github.com/smugmug/godynamo/types/item"
+	"github.com/gshiftlabs-gwedow/godynamo/conf"
+	"github.com/gshiftlabs-gwedow/godynamo/conf_file"
+	conf_iam "github.com/gshiftlabs-gwedow/godynamo/conf_iam"
+	batch_write_item "github.com/gshiftlabs-gwedow/godynamo/endpoints/batch_write_item"
+	keepalive "github.com/gshiftlabs-gwedow/godynamo/keepalive"
+	"github.com/gshiftlabs-gwedow/godynamo/types/attributevalue"
+	"github.com/gshiftlabs-gwedow/godynamo/types/item"
 	"log"
 	"net/http"
 )

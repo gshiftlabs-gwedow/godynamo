@@ -2,9 +2,9 @@
 package attributesresponse
 
 import (
-	"github.com/smugmug/godynamo/types/attributevalue"
-	"github.com/smugmug/godynamo/types/capacity"
-	"github.com/smugmug/godynamo/types/itemcollectionmetrics"
+	"github.com/gshiftlabs-gwedow/godynamo/types/attributevalue"
+	"github.com/gshiftlabs-gwedow/godynamo/types/capacity"
+	"github.com/gshiftlabs-gwedow/godynamo/types/itemcollectionmetrics"
 )
 
 type AttributesResponse struct {

@@ -8,15 +8,15 @@ package query
 
 import (
 	"encoding/json"
-	"github.com/smugmug/godynamo/authreq"
-	"github.com/smugmug/godynamo/aws_const"
-	"github.com/smugmug/godynamo/types/attributestoget"
-	"github.com/smugmug/godynamo/types/attributevalue"
-	"github.com/smugmug/godynamo/types/aws_strings"
-	"github.com/smugmug/godynamo/types/capacity"
-	"github.com/smugmug/godynamo/types/condition"
-	"github.com/smugmug/godynamo/types/expressionattributenames"
-	"github.com/smugmug/godynamo/types/item"
+	"github.com/gshiftlabs-gwedow/godynamo/authreq"
+	"github.com/gshiftlabs-gwedow/godynamo/aws_const"
+	"github.com/gshiftlabs-gwedow/godynamo/types/attributestoget"
+	"github.com/gshiftlabs-gwedow/godynamo/types/attributevalue"
+	"github.com/gshiftlabs-gwedow/godynamo/types/aws_strings"
+	"github.com/gshiftlabs-gwedow/godynamo/types/capacity"
+	"github.com/gshiftlabs-gwedow/godynamo/types/condition"
+	"github.com/gshiftlabs-gwedow/godynamo/types/expressionattributenames"
+	"github.com/gshiftlabs-gwedow/godynamo/types/item"
 )
 
 const (

@@ -9,20 +9,20 @@ as traditional AWS keys.
 
 To install GoDynamo, run the following command:
 
-        go get github.com/smugmug/godynamo
+        go get github.com/gshiftlabs-gwedow/godynamo
 
 which installs a package that requires the rest of the packages in the library.
 
 Also installed as dependencies are
 
-        https://github.com/smugmug/goawsroles
+        https://github.com/gshiftlabs-gwedow/goawsroles
 
 which manages support for IAM roles.
 
 GoDynamo is the foundation of *bbpd*, the http proxy daemon for DynamoDB.
 You may find that package here:
 
-        https://github.com/smugmug/bbpd
+        https://github.com/gshiftlabs-gwedow/bbpd
 
 To understand how to use Go code in your environment, please see:
 
@@ -75,7 +75,7 @@ For convenience, here is the sample configuration file (comments nonstandard):
                     // set this to false and use the settings above.
                     "use_iam":true,
                     // The role provider is described in the goawsroles package.
-                    // See: https://github.com/smugmug/goawsroles/
+                    // See: https://github.com/gshiftlabs-gwedow/goawsroles/
                     // Currently the only support is for the "file" provider, whereby
                     // roles data is written to local files.
                     "role_provider":"file",
@@ -112,10 +112,10 @@ Below is some boilerplate to enable both of these in your program:
         import (
                 "fmt"
                 "log"
-                conf_iam "github.com/smugmug/godynamo/conf_iam"
-                keepalive "github.com/smugmug/godynamo/keepalive"
-                "github.com/smugmug/godynamo/conf"
-                "github.com/smugmug/godynamo/conf_file"
+                conf_iam "github.com/gshiftlabs-gwedow/godynamo/conf_iam"
+                keepalive "github.com/gshiftlabs-gwedow/godynamo/keepalive"
+                "github.com/gshiftlabs-gwedow/godynamo/conf"
+                "github.com/gshiftlabs-gwedow/godynamo/conf_file"
         )
 
         func main() {
@@ -239,6 +239,6 @@ not reflected in GoDynamo.
 
 ### Contact Us
 
-Please contact opensource@smugmug.com for information related to this package. 
+Please contact opensource@gshiftlabs-gwedow.com for information related to this package. 
 Pull requests also welcome!
 

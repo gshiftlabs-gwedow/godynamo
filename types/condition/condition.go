@@ -3,7 +3,7 @@
 package condition
 
 import (
-	"github.com/smugmug/godynamo/types/attributevalue"
+	"github.com/gshiftlabs-gwedow/godynamo/types/attributevalue"
 )
 
 type Conditions map[string]*Condition

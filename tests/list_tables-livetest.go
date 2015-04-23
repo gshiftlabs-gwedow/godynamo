@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/smugmug/godynamo/conf"
-	"github.com/smugmug/godynamo/conf_file"
-	conf_iam "github.com/smugmug/godynamo/conf_iam"
-	list "github.com/smugmug/godynamo/endpoints/list_tables"
-	keepalive "github.com/smugmug/godynamo/keepalive"
+	"github.com/gshiftlabs-gwedow/godynamo/conf"
+	"github.com/gshiftlabs-gwedow/godynamo/conf_file"
+	conf_iam "github.com/gshiftlabs-gwedow/godynamo/conf_iam"
+	list "github.com/gshiftlabs-gwedow/godynamo/endpoints/list_tables"
+	keepalive "github.com/gshiftlabs-gwedow/godynamo/keepalive"
 	"log"
 )
 
