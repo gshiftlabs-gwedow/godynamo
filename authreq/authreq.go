@@ -61,9 +61,9 @@ func retryReq(reqJSON []byte, amzTarget string) ([]byte, int, error) {
 	resp_body, amz_requestid, code, resp_err := auth_v4.Req(reqJSON, amzTarget)
 	shouldRetry := false
 	if resp_err != nil {
-		e := fmt.Sprintf("authreq.RetryReq:0 "+
-			" try AuthReq Fail:%s (reqid:%s)", resp_err.Error(), amz_requestid)
-		log.Printf("authreq.RetryReq: call err %s\n", e)
+		// e := fmt.Sprintf("authreq.RetryReq:0 "+
+		// 	" try AuthReq Fail:%s (reqid:%s)", resp_err.Error(), amz_requestid)
+		// log.Printf("authreq.RetryReq: call err %s\n", e)
 		shouldRetry = true
 	}
 	// see:
@@ -73,13 +73,13 @@ func retryReq(reqJSON []byte, amzTarget string) ([]byte, int, error) {
 	}
 	if code == http.StatusBadRequest {
 		if bytes.Contains(resp_body, exceeded_msg_bytes) {
-			log.Printf("authreq.RetryReq THROUGHPUT WARNING RETRY\n")
+			// log.Printf("authreq.RetryReq THROUGHPUT WARNING RETRY\n")
 			shouldRetry = true
 		} else if bytes.Contains(resp_body, unrecognized_client_msg_bytes) {
 			log.Printf("authreq.RetryReq CLIENT WARNING RETRY\n")
 			shouldRetry = true
 		} else if bytes.Contains(resp_body, throttling_msg_bytes) {
-			log.Printf("authreq.RetryReq THROUGHPUT WARNING RETRY\n")
+			// log.Printf("authreq.RetryReq THROUGHPUT WARNING RETRY\n")
 			shouldRetry = true
 		} else {
 			log.Printf("authreq.RetryReq un-retryable err: %s\n%s (reqid:%s)\n",
@@ -99,19 +99,19 @@ func retryReq(reqJSON []byte, amzTarget string) ([]byte, int, error) {
 		for i := 1; i < aws_const.RETRIES; i++ {
 			// get random delay from range
 			// [0..4**i*100 ms)
-			log.Printf("authreq.RetryReq: BEGIN SLEEP %v (code:%v) (REQ:%s) (reqid:%s)",
-				time.Now(), code, string(reqJSON), amz_requestid)
+			// log.Printf("authreq.RetryReq: BEGIN SLEEP %v (code:%v) (REQ:%s) (reqid:%s)",
+			// 	time.Now(), code, string(reqJSON), amz_requestid)
 			r := time.Millisecond *
 				time.Duration(g.Int63n(int64(
 					math.Pow(4, float64(i)))*
 					100))
 			time.Sleep(r)
-			log.Printf("authreq.RetryReq END SLEEP %v\n", time.Now())
+			// log.Printf("authreq.RetryReq END SLEEP %v\n", time.Now())
 			shouldRetry = false
-			resp_body, amz_requestid, code, resp_err := auth_v4.Req(reqJSON, amzTarget)
+			resp_body, _, code, resp_err := auth_v4.Req(reqJSON, amzTarget)
 			if resp_err != nil {
-				_ = fmt.Sprintf("authreq.RetryReq:1 "+
-					" try AuthReq Fail:%s (reqid:%s)", resp_err.Error(), amz_requestid)
+				// _ = fmt.Sprintf("authreq.RetryReq:1 "+
+				// 	" try AuthReq Fail:%s (reqid:%s)", resp_err.Error(), amz_requestid)
 				shouldRetry = true
 			}
 			if code >= http.StatusInternalServerError {
@@ -119,13 +119,13 @@ func retryReq(reqJSON []byte, amzTarget string) ([]byte, int, error) {
 			}
 			if code == http.StatusBadRequest {
 				if bytes.Contains(resp_body, exceeded_msg_bytes) {
-					log.Printf("authreq.RetryReq THROUGHPUT WARNING RETRY\n")
+					// log.Printf("authreq.RetryReq THROUGHPUT WARNING RETRY\n")
 					shouldRetry = true
 				}
 			}
 			if !shouldRetry {
 				// worked! no need to retry
-				log.Printf("authreq.RetryReq RETRY LOOP SUCCESS")
+				// log.Printf("authreq.RetryReq RETRY LOOP SUCCESS")
 				return resp_body, code, resp_err
 			}
 		}
